@@ -270,3 +270,149 @@ font-size: 17px;
 padding: 10px;
 }
 }
+/* Login and Registration */
+
+.login-page {
+display: flex;
+min-height: 100vh;
+align-items: center;
+justify-content: center;
+padding: 24px;
+background:
+radial-gradient(ellipse at 50% 0%, rgba(117, 91, 255, 0.2), transparent 55%),
+#0b0d17;
+}
+
+.login-card {
+width: 100%;
+max-width: 420px;
+padding: 32px 24px;
+border: 1px solid rgba(157, 140, 255, 0.17);
+border-radius: 26px;
+background: rgba(20, 23, 38, 0.92);
+box-shadow: 0 24px 80px rgba(0, 0, 0, 0.25);
+}
+
+.login-logo {
+display: grid;
+width: 66px;
+height: 66px;
+margin: 0 auto 24px;
+place-items: center;
+color: white;
+border-radius: 21px;
+background: linear-gradient(135deg, #8875ff, #536bff);
+box-shadow: 0 10px 30px rgba(105, 91, 255, 0.25);
+}
+
+.login-card > h1 {
+margin: 0;
+text-align: center;
+font-size: 27px;
+font-weight: 800;
+letter-spacing: -1px;
+}
+
+.login-subtitle {
+margin: 12px 0 30px;
+color: var(--muted);
+text-align: center;
+font-size: 13px;
+line-height: 1.7;
+}
+
+.login-card form {
+display: flex;
+flex-direction: column;
+gap: 14px;
+}
+
+.input-field {
+display: flex;
+min-height: 54px;
+align-items: center;
+gap: 12px;
+padding: 0 15px;
+color: #9992ff;
+border: 1px solid var(--border);
+border-radius: 14px;
+background: #101321;
+}
+
+.input-field:focus-within {
+border-color: rgba(151, 132, 255, 0.7);
+box-shadow: 0 0 0 3px rgba(130, 117, 255, 0.08);
+}
+
+.input-field input {
+width: 100%;
+min-width: 0;
+padding: 15px 0;
+color: #f4f5ff;
+font: inherit;
+font-size: 13px;
+outline: none;
+border: none;
+background: transparent;
+}
+
+.input-field input::placeholder {
+color: #777e99;
+}
+
+.login-submit {
+min-height: 53px;
+margin-top: 5px;
+color: white;
+font-weight: 700;
+border: none;
+border-radius: 14px;
+background: linear-gradient(110deg, #8975ff, #5d68f4);
+box-shadow: 0 8px 24px rgba(103, 91, 255, 0.2);
+}
+
+.login-submit:disabled {
+cursor: wait;
+opacity: 0.65;
+}
+
+.form-error {
+margin: 0;
+padding: 12px;
+color: #ffb6c0;
+font-size: 12px;
+line-height: 1.6;
+border: 1px solid rgba(255, 100, 130, 0.2);
+border-radius: 10px;
+background: rgba(255, 70, 100, 0.08);
+}
+
+.login-switch {
+margin: 25px 0 0;
+color: var(--muted);
+text-align: center;
+font-size: 12px;
+line-height: 1.8;
+}
+
+.login-switch button {
+padding: 4px;
+color: #a99cff;
+font-weight: 700;
+border: none;
+background: transparent;
+}
+
+@media (max-width: 380px) {
+.login-page {
+padding: 16px;
+}
+
+.login-card {
+padding: 27px 18px;
+}
+
+.login-card > h1 {
+font-size: 24px;
+}
+}
